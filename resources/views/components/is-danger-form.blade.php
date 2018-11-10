@@ -1,0 +1,1 @@
+{{$errors->has($name) ? 'is-danger' : ''}}
