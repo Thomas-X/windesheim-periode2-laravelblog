@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
 {
-
     static public $validations = [
         'title' => [
             'required',
@@ -24,4 +23,9 @@ class Blog extends Model
         'title',
         'description'
     ];
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }

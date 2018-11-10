@@ -24,7 +24,14 @@
  *
  * */
 
+
 Route::get('/', 'HomeController@show');
 
 Route::resource('blogs', 'BlogController');
+
+Route::prefix('/blogs/{blog}')
+    ->group(function () {
+        Route::resource('comments', 'CommentController');
+    });
+
 

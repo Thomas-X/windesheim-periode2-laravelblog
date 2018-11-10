@@ -9,7 +9,7 @@
             </div>
 
             <div class="navbar-end">
-                <a class="navbar-item" href="/">Home</a>
+                <a class="navbar-item" href="/">home</a>
                 <a class="navbar-item" href="/blogs">blogs</a>
             </div>
         </div>
